@@ -1,0 +1,23 @@
+
+<div class="portfolio">
+    <header>
+      <h1>{{ title }}</h1>
+      <p>Welcome to my portfolio! I specialize in frontend development.</p>
+    </header>
+    
+    <section class="technologies">
+      <h2>Technologies I Work With:</h2>
+      <ul>
+        <li *ngFor="let tech of technologies">{{ tech }}</li>
+      </ul>
+    </section>
+    
+    <section class="experience">
+      <h2>Experience:</h2>
+      <ul>
+        <li *ngFor="let job of experience">
+          <strong>{{ job.role }}</strong> at {{ job.company }} ({{ job.duration }})
+        </li>
+      </ul>
+    </section>
+  </div>
